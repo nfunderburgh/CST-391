@@ -12,6 +12,6 @@ export const createTrack = async (track: Track, index: number, albumId: number) 
 };
 
 export const updateTrack = async (track: Track) => {
-    return execute<Track[]>(trackQueries.createTrack,
-        [track.title, track.number, track.video, track.lyrics]);
+    return execute<Track[]>(trackQueries.updateTrack,
+        [track.title, track.number, track.video, track.lyrics, track.trackId]);
 };
