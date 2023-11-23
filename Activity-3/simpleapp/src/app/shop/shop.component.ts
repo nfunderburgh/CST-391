@@ -7,7 +7,6 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent {
-
   question: string = 'What is your name'
   answer: unknown
 
@@ -20,4 +19,3 @@ export class ShopComponent {
     console.log("Your name is " + this.answer);
   }
 }
-
