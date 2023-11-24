@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "simpleapp": {
+    "musicapp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "preserveSymlinks": true,
-            "outputPath": "dist/simpleapp",
+            "outputPath": "dist/musicapp",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -39,7 +39,9 @@
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.js"]
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -69,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "simpleapp:build:production"
+              "buildTarget": "musicapp:build:production"
             },
             "development": {
-              "buildTarget": "simpleapp:build:development"
+              "buildTarget": "musicapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "simpleapp:build"
+            "buildTarget": "musicapp:build"
           }
         },
         "test": {
