@@ -14,16 +14,19 @@ export class ListAlbumsComponent {
   selectedAlbum: Album | null = null;
   constructor(private service: MusicServiceService) { }
 
+
   ngOnInit() {
     console.log("Getting data...");
+
     this.service.getAlbums(String(this.artist?.Name), (albums: Album[]) => {
       this.albums = albums;
       console.log('this.albums', this.albums);
+
     });
   }
-
 
   public onSelectAlbum(album: Album) {
     this.selectedAlbum = album;
   }
+
 }
