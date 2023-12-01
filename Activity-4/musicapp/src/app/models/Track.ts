@@ -1,9 +1,9 @@
 export class Track {
-    private id: number = -1;
-    private number: number = 0;
-    private title: string = "";
-    private lyrics: string = "";
-    private video: string = "";
+    id: number = -1;
+    number: number = 0;
+    title: string = "";
+    lyrics: string = "";
+    video: string = "";
 
     constructor(id: number, number: number, title: string, lyrics: string, video: string) {
         this.id = id;
