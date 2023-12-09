@@ -1,32 +1,48 @@
-import React, { useState } from 'react';
-import Card from './Card.js'
+import React, { useState } from "react";
+import Card from './Card.js';
+import './App.css';
 
-const App = function() {
-    return (
-      <div>
-        <h1>I like music!</h1>
-        <Card
-        albumTitle="Abby Road"
-        albumDescription="Abbey Road is the eleventh studio album by English rock band the Beatles,
-        released on 26 September 1969 by Apple Records. The recording sessions for the album were the
-        last in which all four Beatles participated."
-        imgURL="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
-        buttonText="OK"
-        />
-        <Card
-        albumTitle="Revolver"
-        albumDescription="It's a pun on the way an LP revolves at 33-and-a-third revolutions a minute."
-        imgURL="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
-        buttonText="OK"
-        />
-        <Card
-        albumTitle="Rubber Soul"
-        albumDescription="The songs demonstrate the Beatles' increasing maturity as lyricists, and in their incorporation of brighter guitar tones and new instrumentation such as sitar, harmonium, and fuzz bass."
-        imgURL="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
-        buttonText="OK"
-        />
-      </div>
-    );
-  };
+const App = () => {
+    const [albumList, setAlbumList] = useState([
+        {
+            artistId: 0,
+            artist: 'Beatles',
+            title: 'Abby Road',
+            description: 'Abbey Road is the eleventh studio album by English rock band the Beatles released on 26 September 1969 by Apple Records. The recording sessions for the album were the last in which all four Beatles participated.',
+            year: 1969,
+            image: "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg"
+        },
+        {
+            artistId: 1,
+            artist: 'Beatles',
+            title: 'Revolver',
+            description: "It's a pun on the way an LP revolves at 33-and-a-third revolutions a minute.",
+            year: 1966,
+            image: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Revolver_%28album_cover%29.jpg/220px-Revolver_%28album_cover%29.jpg"
+        },
+        {
+            artistId: 2,
+            artist: 'Beatles',
+            title: 'Rubber Soul',
+            description: "The songs demonstrate the Beatles' increasing maturity as lyricists, and in their incorporation of brighter guitar tones and new instrumentation such as sitar, harmonium, and fuzz bass.",
+            year: 1965,
+            image: "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Rubber_Soul.jpg/220px-Rubber_Soul.jpg"
+        },
+    ]);
+
+    const renderedList = () => {
+        return albumList.map((album) => {
+            return (
+                <Card
+                    albumTitle={album.title}
+                    albumDescription={album.description}
+                    buttonText='OK'
+                    imageURL={album.image}
+                />
+            );
+        });
+    };
+    return <div className="container">{renderedList()}</div>;
+};
 
 export default App;

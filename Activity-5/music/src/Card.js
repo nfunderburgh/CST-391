@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = (props) => {
 
-
+    console.log('Image URL:', props.imageURL);
     return (
         <div className='card' style={{width: '18rem'}}>
             <img src={props.imageURL} alt="title" />
