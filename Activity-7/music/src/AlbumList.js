@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 const AlbumList = (props) => {
 
-    const handleSelectionOne = (albumId) => {
+    const handleSelectionOne = (albumId, uri) => {
         console.log('Selected ID is ' + albumId);
-        props.onClick(albumId, navigator);
+        props.onClick(albumId, navigator, uri);
     };
 
 
@@ -22,6 +22,7 @@ const AlbumList = (props) => {
                 buttonText='OK'
                 imageURL={album.image}
                 onClick={handleSelectionOne}
+                tracks={album.tracks}
             />
         );
     });

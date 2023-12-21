@@ -15,6 +15,7 @@ const Card = (props) => {
                 <h5 className="card-title">{props.albumTitle}</h5>
                 <p className="card-text"> {props.albumDescription}</p>
                 <button className="btn btn-primary" onClick={() => handleButtonClick(props.albumId, '/show/')}>{props.buttonText}</button>
+                <button className="btn btn-primary" onClick={() => handleButtonClick(props.albumId, '/edit/')}>Edit</button>
             </div>
         </div>
     );
