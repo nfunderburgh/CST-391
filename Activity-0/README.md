@@ -7,7 +7,7 @@ In this activity the goal was to validate the installation of both Express and N
 
 Node and NPM Install
 
-![Node and Npm](screenshots/NodeAndNpm.png)
+![Node and Npm](screenshots/Node_Npm.png)
 
 
 ## Video URL
