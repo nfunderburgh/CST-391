@@ -3,6 +3,9 @@
  ## Activity Overview
 In this activity, students will build a simple test application that implements multiple components, handles page events, and binds data to a view template.
 
+## Video URL
+http:tests
+
 ## Screen Shots
 
 Bootstrap Small Screen
@@ -45,6 +48,3 @@ Artist List
 About Box
 
 ![About Box](screenshots/About_Box.png)
-
-## Video URL
-http:tests
