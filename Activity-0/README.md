@@ -4,7 +4,7 @@
 In this activity the goal was to validate the installation of both Express and NodeJS by creating a simple hello world application
 
 ## Video URL
-https://youtu.be/A4MKgb6B5Ok
+https://youtu.be/wKrkh5vQJ_U
 
 ## Screen Shots
 
