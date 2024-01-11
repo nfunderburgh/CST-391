@@ -1,25 +1,22 @@
-# Activity 2
+# Activity 5
 
  ## Activity Overview
-In this activity, students will install the development tool and validate the tools installation with a simple test application running on Angular.
+In this activity, student will demonstrate state changing through a demo program and then add state changing into the Music application
 
 ## Screen Shots
 
-Angular Version
+Part 1 - React Music App Intro
 
-![Angular Version](screenshots/Angular_Version.png)
+![React Music App Intro](screenshots/React_Music_App_Intro.png)
 
+Mini App 1 - State Changer
 
-Changing the title within app.component.ts
+![State Changer Pic 1](screenshots/State_Changer1.png)
+![State Changer Pic 2](screenshots/State_Changer2.png)
 
-![Change Title](screenshots/Change_Title.png)
+Part 2 - State and props
 
-
-Adding a message variable and rendering it within h3 tag
-
-![Adding Variable](screenshots/Adding_Var.png)
-
-
+![State and props](screenshots/State_and_Props.png)
 
 ## Video URL
 http:tests
